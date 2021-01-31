@@ -118,7 +118,7 @@ public class Vehicles {
 		}
 		String[] nm = arg4.split(" ",3);
 		double con = Integer.parseInt(nm[0])*type/100;
-		String report = "DOORS OK, MOVING. The " + arg1 + " will consume " + String.format("%.2d", con) + " L";
+		String report = "DOORS OK, MOVING. The " + arg1 + " will consume " + String.format("%.2f", con) + " L";
 		System.out.println(report);
 		
 		return report;
