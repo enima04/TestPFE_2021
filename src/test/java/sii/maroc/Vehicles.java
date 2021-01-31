@@ -117,8 +117,9 @@ public class Vehicles {
 			type = this.getHybrid();
 		}
 		String[] nm = arg4.split(" ",3);
-		float con = Integer.parseInt(nm[0])*type/100;
-		String report = "DOORS OK, MOVING. The " + arg1 + " will consume " + con + " L";
+		double con = Integer.parseInt(nm[0])*type/100;
+		String report = "DOORS OK, MOVING. The " + arg1 + " will consume " + String.format("%.2d", con) + " L";
+		System.out.println(report);
 		
 		return report;
 		
